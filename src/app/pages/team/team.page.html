@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/pages/login"></ion-back-button>
+      <ion-label>Team</ion-label>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+</ion-content>
+
+
+
+<ion-toolbar class="tabs">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="Inicio" [routerLink]="['/pages/main/']">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="Productos" [routerLink]="['/pages/shop']">
+        <ion-icon name="game-controller-outline"></ion-icon>
+        <ion-label>Productos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="Acerca de..." [routerLink]="['/pages/team']">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Acerca de...</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+    </ion-tabs>
+</ion-toolbar>

@@ -1,0 +1,41 @@
+
+.welcome-card {
+  max-width: 100%;
+
+
+  ion-img {
+        width: 150px;
+
+        margin:auto;
+        width: 80%;
+
+  }
+
+  ion-card-header {
+    max-width: 60vw;
+    margin: auto;
+    height: 100%;
+  }
+}
+.caja {
+  font-size: 18px;
+  color: #ff0000;
+  background:#201b1b
+  margin 0 0 25px;
+  padding: 15px;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 50px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 1px solid #5878ca;
+  text-align: center;
+  height: 60px;
+}
+ion-tabs{
+  padding: auto;
+  padding-top: auto;
+}
+.tabs{
+  position: relative;
+  top: -20px;
+
+}
