@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
-
-
+import { NotificationsComponent } from 'src/app/notifications/notifications.component';
 
 
 @Component({
@@ -11,15 +10,15 @@ import { PopoverController } from '@ionic/angular';
 })
 export class ShopPage  {
 
-  constructor(public popoverController: PopoverController) {}
-
-  async Presentarpopover(ev: any) {
-    const popover = await this.popoverController.create({
-      component: Component,
-      cssClass: 'my-custom-class',
-      event: ev,
-      translucent: true
+  constructor(public popoverCtrl: PopoverController) { }
+  async notifications(ev: any) {
+    const popover = await this.popoverCtrl.create({
+        component: NotificationsComponent,
+        event: ev,
+        animated: true,
+        showBackdrop: true
     });
-    await popover.present();
+    return await popover.present();
   }
 }
+
