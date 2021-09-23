@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CRegisterPage } from './cRegister/cRegister.page';
+import { DCompraPage } from './dCompra/dCompra.page';
 import { LoginPage } from './login/login.page';
 import { MainPage } from './main/main.page';
 import { RegisterPage } from './register/register.page';
@@ -21,6 +22,7 @@ const routes: Routes = [
         {  path: 'login',component:       LoginPage,                 }, //Se declara la clase
         {  path: 'vCorreo',component:     VCorreoPage,                 }, //Se declara la clase
         {  path: 'team',component:        TeamPage,                 }, //Se declara la clase
+        {  path: 'dCompra',component:     DCompraPage,                 }, //Se declara la clase
     ]
   }
 ];

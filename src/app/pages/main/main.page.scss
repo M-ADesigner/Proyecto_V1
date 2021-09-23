@@ -1,19 +1,38 @@
 
 .welcome-card {
   max-width: 100%;
+  height: 180px;
+
+
+
 
 
   ion-img {
         width: 150px;
-        margin:auto;
-        width: 80%;
+        display: block inline;
+        top: 100px;
 
   }
+  ion-card-header{
+    left: 100px;
+    bottom: 150px;
+
+
+    }
+    ion-card-subtitle{
+      text-align: left;
+      display: inline;
+    }
+
+
 
   ion-card-header {
     max-width: 60vw;
     margin: auto;
     height: 100%;
+  }
+  p{
+    width: 100px;
   }
 }
 .caja {
