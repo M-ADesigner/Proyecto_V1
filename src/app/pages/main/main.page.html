@@ -8,7 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content  color="black">
   <ion-card class="welcome-card">
     <ion-img src="/assets/registerUser.png"></ion-img>
     <ion-card-header >
@@ -21,19 +21,11 @@
                     </ion-card>
 
 
-  <ion-list>
+<ion-list>
   <ion-list-header>
-    <ion-row>
-      <ion-col>
-        <ion-label>Historial de compras</ion-label>
-      </ion-col>
-    </ion-row>
+    <ion-label>Historial de compras</ion-label>
   </ion-list-header>
-
-
-
   <ion-card-header>
-
     <ion-item routerLink="https://www.facebook.com/maicol.avila.357/">
       <ion-icon slot="start" color="medium" name="archive"></ion-icon>
       <ion-label>Paypal Plugin Repository</ion-label>
@@ -74,27 +66,8 @@
       <ion-label>More Enappd Starters</ion-label>
     </ion-item>
   </ion-card-header>
-  </ion-list>
+</ion-list>
 </ion-content>
 
 
-<ion-toolbar class="tabs">
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="Inicio" [routerLink]="['/pages/main']">
-        <ion-icon name="person-circle"></ion-icon>
-        <ion-label>Inicio</ion-label>
-      </ion-tab-button>
 
-      <ion-tab-button tab="Productos" [routerLink]="['/pages/shop']">
-        <ion-icon name="game-controller-outline"></ion-icon>
-        <ion-label>Productos</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="Acerca de..." [routerLink]="['/pages/team']">
-        <ion-icon name="information-circle"></ion-icon>
-        <ion-label>Acerca de...</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-    </ion-tabs>
-</ion-toolbar>
