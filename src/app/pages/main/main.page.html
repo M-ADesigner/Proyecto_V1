@@ -8,7 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content  color="black">
+<ion-content>
   <ion-card class="welcome-card">
     <ion-img src="/assets/registerUser.png"></ion-img>
     <ion-card-header >
@@ -25,7 +25,6 @@
   <ion-list-header>
     <ion-label>Historial de compras</ion-label>
   </ion-list-header>
-  <ion-card-header>
     <ion-item routerLink="https://www.facebook.com/maicol.avila.357/">
       <ion-icon slot="start" color="medium" name="archive"></ion-icon>
       <ion-label>Paypal Plugin Repository</ion-label>
@@ -41,25 +40,33 @@
       <ion-icon slot="start" color="medium" name="archive"></ion-icon>
       <ion-label>More Enappd Starters</ion-label>
     </ion-item>
-
-    <ion-item routerLink="https://www.facebook.com/maicol.avila.357/">
-      <ion-icon slot="start" color="medium" name="archive"></ion-icon>
-      <ion-label>Paypal Plugin Repository</ion-label>
-    </ion-item>
-
-    <ion-item href="https://github.com/paypal/PayPal-Cordova-Plugin">
-      <ion-icon slot="start" color="medium" name="archive"></ion-icon>
-      <ion-label>Paypal Plugin Repository</ion-label>
-    </ion-item>
-
-
-    <ion-item href="https://store.enappd.com">
-      <ion-icon slot="start" color="medium" name="archive"></ion-icon>
-      <ion-label>More Enappd Starters</ion-label>
-    </ion-item>
-  </ion-card-header>
 </ion-list>
 </ion-content>
+
+<ion-item>
+  <ion-tabs>
+    <ion-tab-bar >
+      <ion-tab-button tab="Inicio" [routerLink]="['/pages/main/']">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="Productos" [routerLink]="['/pages/shop']">
+        <ion-icon name="game-controller-outline"></ion-icon>
+        <ion-label>Productos</ion-label>
+      </ion-tab-button>
+
+<<<<<<< Updated upstream
+=======
+      <ion-tab-button tab="Acerca de..." [routerLink]="['/pages/team']">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Acerca de...</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-item>
+>>>>>>> Stashed changes
+
 
 
 
