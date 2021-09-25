@@ -43,9 +43,9 @@
 </ion-list>
 </ion-content>
 
-<ion-item>
+<ion-toolbar class="tabs">
   <ion-tabs>
-    <ion-tab-bar >
+    <ion-tab-bar slot="bottom">
       <ion-tab-button tab="Inicio" [routerLink]="['/pages/main/']">
         <ion-icon name="person-circle"></ion-icon>
         <ion-label>Inicio</ion-label>
@@ -56,38 +56,15 @@
         <ion-label>Productos</ion-label>
       </ion-tab-button>
 
-<<<<<<< Updated upstream
-=======
       <ion-tab-button tab="Acerca de..." [routerLink]="['/pages/team']">
         <ion-icon name="information-circle"></ion-icon>
         <ion-label>Acerca de...</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
-  </ion-tabs>
-</ion-item>
->>>>>>> Stashed changes
+    </ion-tabs>
+</ion-toolbar>
 
 
 
 
-  <ion-toolbar class="tabs">
-    <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="Inicio" [routerLink]="['/pages/main/']">
-          <ion-icon name="person-circle"></ion-icon>
-          <ion-label>Inicio</ion-label>
-        </ion-tab-button>
-
-        <ion-tab-button tab="Productos" [routerLink]="['/pages/shop']">
-          <ion-icon name="game-controller-outline"></ion-icon>
-          <ion-label>Productos</ion-label>
-        </ion-tab-button>
-
-        <ion-tab-button tab="Acerca de..." [routerLink]="['/pages/team']">
-          <ion-icon name="information-circle"></ion-icon>
-          <ion-label>Acerca de...</ion-label>
-        </ion-tab-button>
-      </ion-tab-bar>
-      </ion-tabs>
-  </ion-toolbar>
 
