@@ -1,0 +1,19 @@
+{
+  "usuario": [
+    {
+      "id": 1,
+      "title": " ",
+      "author": ""
+    },
+    {
+      "email": "AvilaJA",
+      "clave": "PatomanJA",
+      "id": 2
+    },
+    {
+      "email": " ",
+      "clave": "",
+      "id": 3
+    },
+  ]
+}

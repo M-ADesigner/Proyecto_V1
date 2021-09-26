@@ -6,6 +6,11 @@ import { LoadingController } from '@ionic/angular';
 })
 
 export class IonLoaderService {
+
+  constructor(
+    public loadingController: LoadingController
+  ) { }
+
   dismissLoader() {
     throw new Error('Method not implemented.');
   }
@@ -16,8 +21,5 @@ export class IonLoaderService {
     throw new Error('Method not implemented.');
   }
 
-  constructor(
-    public loadingController: LoadingController
-  ) { }
 
 }

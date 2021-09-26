@@ -10,18 +10,30 @@
       <ion-img src="/assets/Users.png"> </ion-img>
     </ion-card-header>
     <ion-card-content>
+
+    <form #form="ngForm" (ngSubmit)="login(form)" method="POST" >
       <ion-item>
         <ion-label position="floating">Usuario</ion-label>
-        <ion-input type="Usuario"></ion-input>
+        <ion-input type="Users"
+                   name="Users"
+                   placeholder="Usuario"
+                   [(ngModel)]="usuario.nombre"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label  position="floating">Contraseña</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input  type="password"
+                    name="password"
+                    [(ngModel)]="usuario.clave"
+                    placeholder="Contraseña"></ion-input>
       </ion-item>
-      <ion-button href = "/pages/main" expand="block">Iniciar</ion-button>
+      <div [routerLink]="['/pages/main/']">
+        <ion-button type="submit" size="large" expand="block" >Login</ion-button>
+      </div>
+    </form>
+  </ion-card-content>
+
           <ion-button href="/pages/vCorreo"  expand="block" fill="outline">¿Olvidaste tu contraseña?</ion-button>
           <ion-button href="/pages/register"expand="block" fill="outline">Registrar cuenta</ion-button>
-    </ion-card-content>
 </ion-content>
 
 

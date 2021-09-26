@@ -21,7 +21,7 @@ import { VCorreoPage } from './vCorreo/vCorreo.page';
                    LoginPage,
                    VCorreoPage,
                    TeamPage,
-                   DCompraPage],  /// Se desclara la clase
+                   DCompraPage,],  /// Se desclara la clase
     entryComponents: [],
     imports: [
         //BrowserModule,

@@ -8,10 +8,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
     path: 'pages',
     loadChildren: () => import('./pages/pages.module').then( m => m.PagesModule) //Declaramos la clase llamandola desde el modulo
   },

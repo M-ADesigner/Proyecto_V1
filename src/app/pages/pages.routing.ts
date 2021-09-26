@@ -15,14 +15,14 @@ const routes: Routes = [
     path: '',
     //component: LogoPage,
     children: [
-        {  path: 'register',component:    RegisterPage,         }, //Se declara la clase
-        {  path: 'main',component:        MainPage,                 }, //Se declara la clase
-        {  path: 'shop',component:        ShopPage,                 }, //Se declara la clase
-        {  path: 'cRegister',component:   CRegisterPage,                 }, //Se declara la clase
-        {  path: 'login',component:       LoginPage,                 }, //Se declara la clase
-        {  path: 'vCorreo',component:     VCorreoPage,                 }, //Se declara la clase
-        {  path: 'team',component:        TeamPage,                 }, //Se declara la clase
-        {  path: 'dCompra',component:     DCompraPage,                 }, //Se declara la clase
+        {  path: 'register',  component:RegisterPage}, //Se declara la clase
+        {  path: 'main',      component:MainPage}, //Se declara la clase
+        {  path: 'shop',      component:ShopPage}, //Se declara la clase
+        {  path: 'cRegister', component:CRegisterPage}, //Se declara la clase
+        {  path: 'login',     component:LoginPage}, //Se declara la clase
+        {  path: 'vCorreo',   component:VCorreoPage}, //Se declara la clase
+        {  path: 'team',      component:TeamPage}, //Se declara la clase
+        {  path: 'dCompra',   component:DCompraPage}, //Se declara la clase
     ]
   }
 ];

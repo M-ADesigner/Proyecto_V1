@@ -6,14 +6,21 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 @NgModule({
-  declarations: [AppComponent, NotificationsComponent],
+  declarations: [AppComponent
+              , NotificationsComponent],
   entryComponents: [NotificationsComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  imports: [BrowserModule
+          , IonicModule.forRoot()
+          , AppRoutingModule
+          , HttpClientModule  ///Importamos el httpcliente
+        ],
+  providers: [{ provide: RouteReuseStrategy
+              , useClass: IonicRouteStrategy }
 ],
   bootstrap: [AppComponent],
 })
