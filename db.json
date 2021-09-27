@@ -2,18 +2,13 @@
   "usuario": [
     {
       "id": 1,
-      "title": " ",
-      "author": ""
+      "title": "Admin",
+      "author": "Maicol Avila"
     },
     {
-      "email": "AvilaJA",
-      "clave": "PatomanJA",
+      "user": " Patricio",
+      "clave": "patopato123",
       "id": 2
-    },
-    {
-      "email": " ",
-      "clave": "",
-      "id": 3
-    },
+    }
   ]
 }

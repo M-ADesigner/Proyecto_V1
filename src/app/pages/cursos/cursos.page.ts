@@ -4,11 +4,11 @@ import { NotificationsComponent } from 'src/app/notifications/notifications.comp
 
 
 @Component({
-  selector: 'app-shop',
-  templateUrl: './shop.page.html',
-  styleUrls: ['./shop.page.scss'],
+  selector: 'app-cursos',
+  templateUrl: './cursos.page.html',
+  styleUrls: ['./cursos.page.scss'],
 })
-export class ShopPage  {
+export class CursosPage  {
 
   constructor(public popoverCtrl: PopoverController) { }
   async notifications(ev: any) {
