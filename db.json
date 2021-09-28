@@ -9,6 +9,21 @@
       "user": " Patricio",
       "clave": "patopato123",
       "id": 2
+    },
+    {
+      "user": "",
+      "clave": "",
+      "id": 3
+    },
+    {
+      "user": "Erika",
+      "clave": "Erikamail",
+      "id": 4
+    },
+    {
+      "user": "Claudio",
+      "clave": "Avila",
+      "id": 5
     }
   ]
 }

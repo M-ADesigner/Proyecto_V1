@@ -3,7 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { CRegisterPage } from './cRegister/cRegister.page';
 import { CursoCssPage } from './cursoCss/cursoCss.page';
+import { CursohtmlPage } from './cursos/cursoHtml/cursoHtml.cursos';
 import { CursosPage } from './cursos/cursos.page';
+import { EstructuraHtmlPage } from './cursos/estructuraHtml/estructuraHtml.cursos';
+import { EtiquetasBhtmlPage } from './cursos/etiquetasBhtml/etiquetasBhtml.cursos';
+import { SintaxisHtmlPage } from './cursos/sintaxisHtml/sintaxisHtml.cursos';
 import { LoginPage } from './login/login.page';
 import { MainPage } from './main/main.page';
 import { PagesRoutingModule } from './pages.routing';
@@ -21,7 +25,11 @@ import { VCorreoPage } from './vCorreo/vCorreo.page';
                    LoginPage,
                    VCorreoPage,
                    TeamPage,
-                   CursoCssPage],  /// Se desclara la clase
+                   CursoCssPage,
+                   CursohtmlPage,
+                   SintaxisHtmlPage,
+                   EstructuraHtmlPage,
+                   EtiquetasBhtmlPage],  /// Se desclara la clase
     entryComponents: [],
     imports: [
         //BrowserModule,

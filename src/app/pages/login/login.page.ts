@@ -12,7 +12,7 @@ export class LoginPage  {
 
     // eslint-disable-next-line @typescript-eslint/member-ordering
     usuario={
-      nombre:' ',
+      nombre:'',
       clave:'',
     };
 

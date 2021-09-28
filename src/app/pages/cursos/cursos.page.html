@@ -3,6 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button contentId="main-content" type="overlay"></ion-menu-button>
     </ion-buttons>
+    <ion-label><h1>Clase 1 HTML</h1></ion-label>
         <ion-buttons slot="end"  ><ion-button (click)="notifications()" >
             <ion-icon name="notifications" ></ion-icon>
             <ion-label>(1)</ion-label>
@@ -14,7 +15,32 @@
 
 <ion-content>
 
+<ion-list>
+  <ion-list-header>
+    <ion-label style="text-align: center;" ><h2>Primeros fundamentos!! </h2> </ion-label>
+  </ion-list-header>
+    <ion-item href="/pages/cursoHtml">
+      <ion-icon slot="start" color="medium" name="logo-html5"></ion-icon>
+      <ion-label>Que es HTML?</ion-label>
+    </ion-item>
 
+
+    <ion-item href="/pages/sintaxisHtml">
+      <ion-icon slot="start" color="medium" name="logo-html5"></ion-icon>
+      <ion-label>La sintaxis de HTML</ion-label>
+    </ion-item>
+
+
+    <ion-item href="/pages/estructuraHtml">
+      <ion-icon slot="start" color="medium" name="logo-html5"></ion-icon>
+      <ion-label>La estructura del HTML</ion-label>
+    </ion-item>
+
+    <ion-item href="/pages/EtiquetasBhtml">
+      <ion-icon slot="start" color="medium" name="logo-html5"></ion-icon>
+      <ion-label>Etiquetas basicas HTML</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
 
 

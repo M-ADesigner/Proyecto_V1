@@ -3,7 +3,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CRegisterPage } from './cRegister/cRegister.page';
 import { CursoCssPage } from './cursoCss/cursoCss.page';
+import { CursohtmlPage } from './cursos/cursoHtml/cursoHtml.cursos';
 import { CursosPage } from './cursos/cursos.page';
+import { EstructuraHtmlPage } from './cursos/estructuraHtml/estructuraHtml.cursos';
+import { EtiquetasBhtmlPage } from './cursos/etiquetasBhtml/etiquetasBhtml.cursos';
+import { SintaxisHtmlPage } from './cursos/sintaxisHtml/sintaxisHtml.cursos';
 import { LoginPage } from './login/login.page';
 import { MainPage } from './main/main.page';
 import { RegisterPage } from './register/register.page';
@@ -23,6 +27,10 @@ const routes: Routes = [
         {  path: 'vCorreo',   component:VCorreoPage}, //Se declara la clase
         {  path: 'team',      component:TeamPage}, //Se declara la clase
         {  path: 'cursoCss',  component:CursoCssPage}, //Se declara la clase
+        {  path: 'cursoHtml',  component:CursohtmlPage}, //Se declara la clase
+        {  path: 'sintaxisHtml',  component:SintaxisHtmlPage}, //Se declara la clase
+        {  path: 'estructuraHtml',  component:EstructuraHtmlPage}, //Se declara la clase
+        {  path: 'EtiquetasBhtml',  component:EtiquetasBhtmlPage}, //Se declara la clase
     ]
   }
 ];

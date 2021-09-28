@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 
+
 @NgModule({
   declarations: [AppComponent
               , NotificationsComponent],
@@ -19,8 +20,11 @@ import { HttpClientModule } from '@angular/common/http';
           , AppRoutingModule
           , HttpClientModule  ///Importamos el httpcliente
         ],
-  providers: [{ provide: RouteReuseStrategy
-              , useClass: IonicRouteStrategy }
+  providers: [
+
+
+
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
 ],
   bootstrap: [AppComponent],
 })
