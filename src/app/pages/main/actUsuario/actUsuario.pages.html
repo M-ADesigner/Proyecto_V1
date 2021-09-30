@@ -1,18 +1,15 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar style="background-color: aliceblue;">
     <ion-button slot="start">
-    <ion-back-button defaultHref="/pages/main">
-
-    </ion-back-button>
+    <ion-back-button defaultHref="/pages/main"></ion-back-button>
   </ion-button>
-  <ion-title style="text-align: center;">
-  </ion-title>
 </ion-toolbar>
 </ion-header>
 
 
-<ion-content>
+<ion-content style="background-color: aliceblue;">
   <form #form="ngForm" (ngSubmit)="ejecutar(form)" method="post">
+    <ion-list>
     <div text-center>
         <h4>&nbsp;&nbsp;&nbsp; Conexión</h4>
       </div>
@@ -40,7 +37,15 @@
     <div padding>
         <ion-button type="submit" size="large"  expand="block">Actualizar</ion-button>
       </div>
-      <ion-item href="pages/main"  type="submit" (click)="eliminarUser()" size="large" expand="block"> eliminar</ion-item>
+        </ion-list>
+        <ion-buttons >
 
-</form>
+          <ion-label position="floating"></ion-label>
+          <ion-input type="text"
+                     name="txid"
+                     placeholder="Eliminar usuario"
+                     [(ngModel)]="this.maine.lRegistros.id"></ion-input>
+                     <ion-item  href="pages/main" type="submit" (click)="eliminarUser()" size="large" expand="block"> eliminar</ion-item>
+          </ion-buttons>
+    </form>
 </ion-content>

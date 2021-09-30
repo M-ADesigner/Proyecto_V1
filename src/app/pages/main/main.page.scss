@@ -1,10 +1,13 @@
 
 .welcome-card {
-  height: 180px;
+  height: 160px;
 
 
   ion-img {
-        width: 150px;
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;
+        border: 1px solid rgb(0, 0, 0);
 
   }
   ion-card-header{

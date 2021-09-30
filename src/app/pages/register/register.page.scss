@@ -1,13 +1,13 @@
 
 
 .welcome-card {
-    max-width: 80vw;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
-    border: black 3px solid;
+    border: rgb(0, 0, 0) 3px solid;
 
     ion-img {
-      width: 150px; height: 150px;
+        width: 150px;
         display:block;
         margin:auto;
     }
@@ -16,10 +16,4 @@
       font-family: monospace;
 
     }
-
-  .ion-padding{
-    text-align: center;
-
-
-  }
 }

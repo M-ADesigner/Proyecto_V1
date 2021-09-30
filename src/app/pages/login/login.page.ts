@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { PagesService } from "../pages.services";
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -9,12 +10,12 @@ import { PagesService } from "../pages.services";
 export class LoginPage  {
 
   constructor(public miServicio: PagesService) { }
-
     // eslint-disable-next-line @typescript-eslint/member-ordering
     usuario={
       nombre:'',
       clave:'',
     };
+
 
     login(){
       console.log('Se a registrado correctamente');
