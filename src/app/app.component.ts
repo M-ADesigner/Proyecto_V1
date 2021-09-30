@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public appPages = [
     { title: 'HTML5  ',       url:'/pages/cursos',   icon: 'heart' },
-    { title: 'Css  ',         url:'/pages/cursoCss', icon: 'extension-puzzle' },
-
-
+    { title: 'Css  ',         url:'/pages/cursoCss', icon: 'extension-puzzle' }
   ];
   constructor() {}
 }

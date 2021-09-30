@@ -9,7 +9,15 @@
 </ion-header>
 
 <ion-content>
-  <ion-card class="welcome-card">
+  <ion-refresher slot="fixed" (ionRefresh)="refrescar($event)">
+    <ion-refresher-content
+      pullingIcon="chevron-down-circle-outline"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refrescando...">
+    </ion-refresher-content>
+  </ion-refresher>
+    <ion-card class="welcome-card">
     <ion-img src="/assets/registerUser.png"></ion-img>
     <ion-card-header >
       <ion-card-title><h5>Maicol Avila</h5></ion-card-title>
@@ -21,15 +29,17 @@
                       </ion-card-header>
                     </ion-card>
 
-
 <ion-list>
   <ion-list-header>
-    <ion-label style="text-align: center;"><h3>Notificaciones</h3></ion-label>
+    <ion-label style="text-align: center;"><h3>Usuarios Registrados</h3></ion-label>
   </ion-list-header>
+  <ion-item  href="/pages/actUsuario" *ngFor="let reg of this.miSericio.lRegistros" lines="none">
+    <ion-icon slot="start" ios="bookmark-outline" md="person-circle-outline"></ion-icon>
+    <ion-label> {{ reg.id }}
+                {{ reg.usuario }}</ion-label>
+  </ion-item>
 </ion-list>
-
 </ion-content>
-
 <ion-toolbar class="tabs">
   <ion-tabs>
     <ion-tab-bar slot="bottom">

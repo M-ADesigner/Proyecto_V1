@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+    <ion-back-button defaultHref="/pages/main">
+
+    </ion-back-button>
+  </ion-button>
+  <ion-title style="text-align: center;">
+  </ion-title>
+</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <form #form="ngForm" (ngSubmit)="ejecutar(form)" method="post">
+    <div text-center>
+        <h4>&nbsp;&nbsp;&nbsp; Conexión</h4>
+      </div>
+      <ion-item>
+        <ion-label position="floating">id</ion-label>
+        <ion-input type="text"
+                   name="txid"
+                   placeholder="id"
+                   [(ngModel)]="this.maine.lRegistros.id"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">nombre</ion-label>
+        <ion-input  type="text"
+                    name="txNombres"
+                    [(ngModel)]="this.maine.lRegistros.usuario"
+                    placeholder="Nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">clave</ion-label>
+        <ion-input  type="password"
+                    name="password"
+                    [(ngModel)]="this.maine.lRegistros.clave"
+                    placeholder="password"></ion-input>
+      </ion-item>
+    <div padding>
+        <ion-button type="submit" size="large"  expand="block">Actualizar</ion-button>
+      </div>
+      <ion-item href="pages/main"  type="submit" (click)="eliminarUser()" size="large" expand="block"> eliminar</ion-item>
+
+</form>
+</ion-content>

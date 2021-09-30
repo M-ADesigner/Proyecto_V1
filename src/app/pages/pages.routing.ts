@@ -9,6 +9,7 @@ import { EstructuraHtmlPage } from './cursos/estructuraHtml/estructuraHtml.curso
 import { EtiquetasBhtmlPage } from './cursos/etiquetasBhtml/etiquetasBhtml.cursos';
 import { SintaxisHtmlPage } from './cursos/sintaxisHtml/sintaxisHtml.cursos';
 import { LoginPage } from './login/login.page';
+import { ActUsuarioPage } from './main/actUsuario/actUsuario.pages';
 import { MainPage } from './main/main.page';
 import { RegisterPage } from './register/register.page';
 import { TeamPage } from './team/team.page';
@@ -31,6 +32,7 @@ const routes: Routes = [
         {  path: 'sintaxisHtml',  component:SintaxisHtmlPage}, //Se declara la clase
         {  path: 'estructuraHtml',  component:EstructuraHtmlPage}, //Se declara la clase
         {  path: 'EtiquetasBhtml',  component:EtiquetasBhtmlPage}, //Se declara la clase
+        {  path: 'actUsuario',      component:ActUsuarioPage}, //Se declara la clase
     ]
   }
 ];

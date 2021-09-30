@@ -1,29 +1,9 @@
 {
   "usuario": [
     {
-      "id": 1,
-      "title": "Admin",
-      "author": "Maicol Avila"
-    },
-    {
-      "user": " Patricio",
-      "clave": "patopato123",
-      "id": 2
-    },
-    {
-      "user": "",
-      "clave": "",
-      "id": 3
-    },
-    {
-      "user": "Erika",
-      "clave": "Erikamail",
-      "id": 4
-    },
-    {
-      "user": "Claudio",
-      "clave": "Avila",
-      "id": 5
+      "usuario": "asdasd",
+      "clave": "asdasd",
+      "id": 1
     }
   ]
 }

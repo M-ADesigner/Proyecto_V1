@@ -6,31 +6,32 @@ import { HttpClient } from '@angular/common/http';
   })
 
   export class PagesService {
-      // eslint-disable-next-line @typescript-eslint/naming-convention
+    lRegistros:any=[
+    ]
       api_url = 'http://localhost:3000/usuario';
-
-
-      // eslint-disable-next-line @typescript-eslint/naming-convention
       constructor(public httpAvila: HttpClient){
           console.log('Se a conectado correctamente al servidor');
       }
 
-    // eslint-disable-next-line @typescript-eslint/ban-types
-    agregar(userParametro: String, passwordParametro: String){
-          console.log('conectando **************',userParametro,passwordParametro);
-          return this.httpAvila.post(this.api_url,
-              {user:userParametro,clave:passwordParametro});
+    listar(){
+      ///console.log("Listar **************")
+      return this.httpAvila.get(this.api_url)
     }
 
 
-  //*---------------------------------------------------------------------------------*//
+    agregar(userParametro: String, passwordParametro: String){
+          console.log('conectando **************',userParametro,passwordParametro);
+          return this.httpAvila.post(this.api_url,
+              {usuario:userParametro,clave:passwordParametro});
+    }
+
+     actualizar(id: string,userParametro: String, passwordParametro: String){
+      return this.httpAvila.put(this.api_url+'/' +id,
+          {usuario:userParametro,clave:passwordParametro} );
+
+     }
     eliminar(id: string){
         return this.httpAvila.delete(this.api_url +'/' +id);
     }
 
-    // eslint-disable-next-line @typescript-eslint/ban-types
-    actualizar(id: string,userParametro: String, passwordParametro: String){
-        return this.httpAvila.put(this.api_url+'/' +id,
-            {email:userParametro,clave:passwordParametro} );
-    }
   }
