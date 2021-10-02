@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { HttpClientModule } from '@angular/common/http';
-import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+
 
 
 @NgModule({

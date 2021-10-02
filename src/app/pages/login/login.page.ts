@@ -1,5 +1,5 @@
-import { Component } from "@angular/core";
-import { PagesService } from "../pages.services";
+import { Component } from '@angular/core';
+import { PagesService } from '../pages.services';
 
 
 @Component({

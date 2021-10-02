@@ -1,5 +1,8 @@
-import { Component, OnInit } from "@angular/core";
-import { PagesService } from "../pages.services";
+import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { NotificationsComponent } from 'src/app/notifications/notifications.component';
+import { PagesService } from '../pages.services';
+import { ActUsuarioPage } from './actUsuario/actUsuario.pages';
 
 @Component({
   selector: 'app-main',
@@ -9,14 +12,14 @@ import { PagesService } from "../pages.services";
 
 export class MainPage  implements OnInit {
 
-   constructor(public miSericio: PagesService) {
+   constructor(public miSericio: PagesService, public popoverCtrl: PopoverController) {
 
    }
   ngOnInit(): void {
       this.miSericio.listar()
       .subscribe(resAvila=>{
         this.miSericio.lRegistros = resAvila
-      })
+      });
   }
 
   refrescar(event) {
@@ -34,5 +37,14 @@ export class MainPage  implements OnInit {
   return this.miSericio.httpAvila .put(this.miSericio.api_url+'/' +id,
   {usuario:userParametro,clave:passwordParametro} );
 
+}
+async notifications(ev: any) {
+  const popover = await this.popoverCtrl.create({
+      component: ActUsuarioPage,
+      event: ev,
+      animated: true,
+      showBackdrop: true
+  });
+  return await popover.present();
 }
 }

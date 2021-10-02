@@ -31,16 +31,19 @@
                   </ion-card-content>
                 </ion-card>
 
-<ion-list>
+
+<ion-list  (click)="notifications()">
   <ion-list-header>
     <ion-label style="text-align: center;"><h3>Usuarios Registrados</h3></ion-label>
   </ion-list-header>
-  <ion-item  href="/pages/actUsuario" *ngFor="let reg of this.miSericio.lRegistros" lines="none">
+
+  <ion-item  *ngFor="let reg of this.miSericio.lRegistros" lines="none">
     <ion-icon slot="start" ios="bookmark-outline" md="person-circle-outline"></ion-icon>
     <ion-label> {{ reg.id }}
                 {{ reg.usuario }}</ion-label>
   </ion-item>
 </ion-list>
+
 </ion-content>
 <ion-toolbar class="tabs">
   <ion-tabs>

@@ -1,18 +1,7 @@
-<ion-header>
-  <ion-toolbar style="background-color: aliceblue;">
-    <ion-button slot="start">
-    <ion-back-button defaultHref="/pages/main"></ion-back-button>
-  </ion-button>
-</ion-toolbar>
-</ion-header>
-
 
 <ion-content style="background-color: aliceblue;">
   <form #form="ngForm" (ngSubmit)="ejecutar(form)" method="post">
     <ion-list>
-    <div text-center>
-        <h4>&nbsp;&nbsp;&nbsp; Conexión</h4>
-      </div>
       <ion-item>
         <ion-label position="floating">id</ion-label>
         <ion-input type="text"
@@ -35,7 +24,7 @@
                     placeholder="password"></ion-input>
       </ion-item>
     <div padding>
-        <ion-button type="submit" size="large"  expand="block">Actualizar</ion-button>
+        <ion-button href="pages/main" type="submit" size="large"  expand="block">Actualizar</ion-button>
       </div>
         </ion-list>
         <ion-buttons >
